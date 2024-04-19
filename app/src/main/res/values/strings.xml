@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">order easy</string>
+    <string name="app_name">OrderEasy</string>
     <string name="title_activity_menu2">MenuActivity2</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,10 +8,18 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <!--  Menu  -->
+    <!--  Menu vertical -->
     <string name="menu_home">Perfil</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <!--  Login  -->
+    <string name="txtLogin">Ingresar a su cuenta</string>
+    <string name="txtWelcome">Bienvenid@ a</string>
+    <string name="txtInstruction">Ingrese su nombre de usuario</string>
+    <string name="btnLogin">Ingresar</string>
+    <string name="txtRegister">¿Aún no tiene una cuenta? Registrarse</string>
+    <string name="txtTermsAndPolicy">Al ingresar usted acepta los Terminos y condiciones de servicio y Politicas de Privacidad</string>
 
     <!--  Profile  -->
     <string name="textChangeImageProfile">Cambiar Imagen de Perfil</string>
