@@ -8,9 +8,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <!--  Menu vertical -->
-    <string name="menu_home">Perfil</string>
-    <string name="menu_gallery">Gallery</string>
+    <!--  Menu  -->
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_food_menu">Menú</string>
     <string name="menu_slideshow">Slideshow</string>
 
     <!--  Login  -->
