@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ProfileViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "profile image"
+        value = "This is profile image Fragment"
     }
     val text: LiveData<String> = _text
 }
