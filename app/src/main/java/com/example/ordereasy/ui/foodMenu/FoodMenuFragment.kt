@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.ordereasy.R
 import com.example.ordereasy.databinding.FragmentFoodMenuBinding
 
 class FoodMenuFragment : Fragment() {
@@ -22,16 +23,12 @@ class FoodMenuFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
-            ViewModelProvider(this).get(FoodMenuViewModel::class.java)
+        val foodMenuViewModel = ViewModelProvider(this).get(FoodMenuViewModel::class.java)
 
         _binding = FragmentFoodMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        binding.btnImgAjiaco.setImageResource(R.mipmap.ajiaco)
         return root
     }
 

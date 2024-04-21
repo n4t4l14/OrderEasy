@@ -8,7 +8,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <!--  Menu  -->
+    <!--  Menu vertical -->
     <string name="menu_profile">Perfil</string>
     <string name="menu_food_menu">Menú</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -39,4 +39,17 @@
     <string name="textEmail">julieth.cp94@gmail.com</string>
     <string name="textAge">37</string>
     <string name="btnEditUser">Editar</string>
+
+    <!--  Food Menu  -->
+    <string name="txtColombianFoodTitle">Comida Colombiana</string>
+    <string name="txtInternationalFoodTitle">Comida Internacional</string>
+
+    <!--  Title Food Menu  -->
+    <string name="txtTitleAjiaco">Ajiaco Santafereño</string>
+
+    <!--  Description Food Menu  -->
+    <string name="txtDescriptionAjiaco">Sopa tradicional bogotana, acompañada de aguacate y arroz blanco</string>
+
+    <!--  Price Food Menu  -->
+    <string name="txtPriceAjiaco">$18.000</string>
 </resources>
