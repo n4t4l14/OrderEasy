@@ -28,7 +28,7 @@ class FoodMenuFragment : Fragment() {
         _binding = FragmentFoodMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.btnImgAjiaco.setImageResource(R.mipmap.ajiaco)
+//        binding.te.setImageResource(R.mipmap.ajiaco)
         return root
     }
 

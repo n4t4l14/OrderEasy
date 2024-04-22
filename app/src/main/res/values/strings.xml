@@ -43,6 +43,7 @@
     <!--  Food Menu  -->
     <string name="txtColombianFoodTitle">Comida Colombiana</string>
     <string name="txtInternationalFoodTitle">Comida Internacional</string>
+    <string name="txtDessertTitle">Postres</string>
 
     <!--  Title Food Menu  -->
     <string name="txtTitleAjiaco">Ajiaco Santafereño</string>
@@ -52,4 +53,6 @@
 
     <!--  Price Food Menu  -->
     <string name="txtPriceAjiaco">$18.000</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
