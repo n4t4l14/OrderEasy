@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.ordereasy.R
 import com.example.ordereasy.databinding.FragmentProfileBinding
 
@@ -40,6 +41,14 @@ class ProfileFragment : Fragment() {
         binding.textAge.text = "30"
 
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnEditUser.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_profileEditFragment)
+        }
     }
 
     override fun onDestroyView() {

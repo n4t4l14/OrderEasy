@@ -18,8 +18,19 @@
         tools:layout="@layout/fragment_profile" />
 
     <fragment
+        android:id="@+id/nav_profile_edit"
+        android:name="com.example.ordereasy.ui.profile.profileEditFragment"
+        android:label="@string/profile_edit"
+        tools:layout="@layout/fragment_profile_edit" />
+
+    <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.ordereasy.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <!--  Acción para navegar desde el fragmento de perfil hasta el fragmento de edición de perfil -->
+    <action
+        android:id="@+id/action_profileFragment_to_profileEditFragment"
+        app:destination="@+id/nav_profile_edit"/>
 </navigation>
