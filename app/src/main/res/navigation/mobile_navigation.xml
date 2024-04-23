@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/nav_shopping_cart"
-        android:name="com.example.ordereasy.ui.shoppingCartFragment"
+        android:name="com.example.ordereasy.ui.ShoppingCartFragment"
         android:label="@string/shopping_cart"
         tools:layout="@layout/fragment_shopping_cart" />
 
@@ -39,4 +39,8 @@
     <action
         android:id="@+id/action_profileFragment_to_profileEditFragment"
         app:destination="@+id/nav_profile_edit"/>
+
+    <action
+        android:id="@+id/action_menu_activity2_to_nav_shopping_cart"
+        app:destination="@+id/nav_shopping_cart"/>
 </navigation>
