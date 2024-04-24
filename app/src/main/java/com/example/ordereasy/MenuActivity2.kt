@@ -2,6 +2,8 @@ package com.example.ordereasy
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -12,6 +14,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ordereasy.databinding.ActivityMenu2Binding
+import com.example.ordereasy.databinding.FragmentShoppingCartBinding
+import com.example.ordereasy.ui.ShoppingCartFragment
 
 class MenuActivity2 : AppCompatActivity() {
 
@@ -38,7 +42,7 @@ class MenuActivity2 : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_gallery, R.id.nav_profile, R.id.nav_slideshow
+                R.id.nav_gallery, R.id.nav_profile, R.id.nav_slideshow, R.id.nav_shopping_cart
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -54,5 +58,18 @@ class MenuActivity2 : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_menu2)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    //  función para manejar el clic del icono carrito de compras
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_shopping_cart -> {
+                // Navegar al fragmento ShoppingCartFragment
+                val navController = findNavController(R.id.nav_host_fragment_content_menu2)
+                navController.navigate(R.id.nav_shopping_cart)
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 }

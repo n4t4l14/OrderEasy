@@ -5,24 +5,28 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_gallery">
 
+<!--  Navegación de fragmento Menú de comidas   -->
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.ordereasy.ui.foodMenu.FoodMenuFragment"
         android:label="@string/menu_food_menu"
         tools:layout="@layout/fragment_food_menu" />
 
+<!--  Navegación de fragmento Perfil  -->
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.ordereasy.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_profile" />
 
+<!--  navegación de fragmento Editar Perfil  -->
     <fragment
         android:id="@+id/nav_profile_edit"
         android:name="com.example.ordereasy.ui.profile.profileEditFragment"
         android:label="@string/profile_edit"
         tools:layout="@layout/fragment_profile_edit" />
 
+<!--  Navegación de fragmento carrito de compras  -->
     <fragment
         android:id="@+id/nav_shopping_cart"
         android:name="com.example.ordereasy.ui.ShoppingCartFragment"
@@ -40,7 +44,4 @@
         android:id="@+id/action_profileFragment_to_profileEditFragment"
         app:destination="@+id/nav_profile_edit"/>
 
-    <action
-        android:id="@+id/action_menu_activity2_to_nav_shopping_cart"
-        app:destination="@+id/nav_shopping_cart"/>
 </navigation>
