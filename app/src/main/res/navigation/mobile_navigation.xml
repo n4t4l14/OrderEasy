@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_gallery">
+    app:startDestination="@+id/nav_food_menu">
 
 <!--  Navegación de fragmento Menú de comidas   -->
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_food_menu"
         android:name="com.example.ordereasy.ui.foodMenu.FoodMenuFragment"
         android:label="@string/menu_food_menu"
         tools:layout="@layout/fragment_food_menu" />

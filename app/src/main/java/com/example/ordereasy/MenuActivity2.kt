@@ -3,7 +3,6 @@ package com.example.ordereasy
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -13,9 +12,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ordereasy.R.id
 import com.example.ordereasy.databinding.ActivityMenu2Binding
-import com.example.ordereasy.databinding.FragmentShoppingCartBinding
-import com.example.ordereasy.ui.ShoppingCartFragment
 
 class MenuActivity2 : AppCompatActivity() {
 
@@ -33,16 +31,16 @@ class MenuActivity2 : AppCompatActivity() {
         binding.appBarMenu2.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
+                .setAnchorView(id.fab).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_menu2)
+        val navController = findNavController(id.nav_host_fragment_content_menu2)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_gallery, R.id.nav_profile, R.id.nav_slideshow, R.id.nav_shopping_cart
+                R.id.nav_food_menu, R.id.nav_profile, R.id.nav_slideshow
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -56,20 +54,21 @@ class MenuActivity2 : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_menu2)
+        val navController = findNavController(id.nav_host_fragment_content_menu2)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
     //  función para manejar el clic del icono carrito de compras
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_shopping_cart -> {
+        return when (item.itemId) {
+            id.action_shopping_cart -> {
                 // Navegar al fragmento ShoppingCartFragment
-                val navController = findNavController(R.id.nav_host_fragment_content_menu2)
-                navController.navigate(R.id.nav_shopping_cart)
-                return true
+                val navController = findNavController(id.nav_host_fragment_content_menu2)
+                navController.navigate(id.nav_shopping_cart)
+                true
             }
-            else -> return super.onOptionsItemSelected(item)
+
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }
