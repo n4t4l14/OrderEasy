@@ -6,5 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".ui.myShopping.MyShoppingFragment">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Barra superior para la fecha de compra -->
+            <TextView
+                android:id="@+id/textPurchaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDateBuy"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@color/gray_300"
+                android:padding="8dp"/>
+
+            <!-- Imagen -->
+            <ImageView
+                android:id="@+id/imageProduct"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ajiaco"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/textPurchaseDate"
+                android:contentDescription="@string/txtProduct" />
+
+            <!-- Estado -->
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageProduct"
+                android:layout_below="@id/textPurchaseDate"
+                android:text="@string/txtStateBuy"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Fecha de entrega -->
+            <TextView
+                android:id="@+id/txtDateStateBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtState"
+                android:layout_toEndOf="@id/imageProduct"
+                android:text="@string/txtDateStateBuy"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+
+            <!--  Descripción de compra  -->
+            <TextView
+                android:id="@+id/textField2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDateStateBuy"
+                android:layout_toEndOf="@id/imageProduct"
+                android:text="@string/txtDescriptionBuy"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Agrega más campos de texto según sea necesario -->
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

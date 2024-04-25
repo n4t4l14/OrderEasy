@@ -22,16 +22,15 @@ class MyShoppingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val myShoppingViewModel =
-            ViewModelProvider(this).get(MyShoppingViewModel::class.java)
+        val myShoppingViewModel = ViewModelProvider(this).get(MyShoppingViewModel::class.java)
 
         _binding = FragmentMyShoppingBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        myShoppingViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+//        val textView: TextView = binding.textPurchaseDate
+//        myShoppingViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
