@@ -66,6 +66,8 @@
     <string name="txtValue">$18.000</string>
 
     <!--  card My Shopping  -->
+    <string name="txtOrderTitle">Orden:</string>
+    <string name="txtOrderBuy">#1234</string>
     <string name="txtDateBuy">24/04/2024</string>
     <string name="txtStateBuy">Entregado</string>
     <string name="txtDateStateBuy">LLegó el día 24/04/2024</string>
