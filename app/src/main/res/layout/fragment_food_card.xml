@@ -25,22 +25,28 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="7dp"
+                android:drawableBottom="@color/orange_50" />
+
             <ImageView
-                android:id="@+id/btnImgAjiaco"
+                android:id="@+id/imageImageView"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/ajiaco"
-                android:contentDescription="@string/txtTitleAjiaco" />
+                android:contentDescription="@string/txtTitleAjiaco"
+                android:src="@mipmap/ajiaco" />
 
             <TextView
-                android:id="@+id/txtTitleAjiaco"
+                android:id="@+id/nombreTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="@string/txtTitleAjiaco"
+                android:text="Sopa Mondongo"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -52,7 +58,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/txtDescriptionAjiaco"
+                android:id="@+id/descripcionTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -69,7 +75,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/txtPriceAjiaco"
+                android:id="@+id/precioTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
@@ -86,6 +92,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
+
 
         </LinearLayout>
 
